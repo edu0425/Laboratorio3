@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 1</title>
+    <link rel="stylesheet" href="estilos1.css">
+</head>
+<body>
+
+    <!-- Primera parte -->
+    <fieldset>
+        <legend class="titulos">Datos Personales</legend>
+        <form>
+            <table class="tablas">
+
+                <tr>
+                    <td class="textos">D.N.I.:</td>
+                    <td><input type="text" size="50%"></td>
+                    <td rowspan="3" >
+                        <label class="textos">Sexo:</label>  <br>
+                        <input type="radio" name="rdsexo" value="Femenino"> <label class="radioButton">Femenino</label>  <br>
+                        <input type="radio" name="rdsexo" value="Masculino"><label class="radioButton">Masculino</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textos">Nombre:</td>
+                    <td><input type="text" size="60%"></td>
+                </tr>
+    
+                <tr>
+                    <td class="textos">Apellidos:</td>
+                    <td><input type="text" size="80%"></td>
+                </tr>
+    
+
+            </table>
+    
+        </form>
+    </fieldset>
+
+        <!-- Segunda parte -->
+    <fieldset>
+        <legend class="titulos">Dirección</legend>
+        <form>
+            <table class="tablas">
+    
+                <tr>
+                    <td class="textos">Calle/Avda:</td>
+                    <td colspan="3">
+                        <input type="text" size="100%">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td class="textos">Población:</td>
+                    <td id="td1"><input type="text" size="40%"></td>
+                    <td class="textos">Provincia:</td>
+                    <td>
+                        <select>
+                            <option value="Lima">Lima</option>
+                            <option value="Barranca">Barranca</option>
+                            <option value="Cañete">Cañete</option>
+                            <option value="Huaral">Huaral</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+        
+        </form>
+    </fieldset>    
+    
+    <!-- Tercera parte -->
+    <fieldset>
+        <legend class="titulos">Practica en grupo</legend>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div>
+                <label id="label2">Archivo: </label>
+                <input type="file">
+            </div>
+                    
+                
+
+            <table>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" value="Archivo comprimido">Archivo comprimido
+                    </td>
+
+                    <td>
+                        <input type="checkbox" value="Archivo encriptado">Archivo encriptado
+                    </td>
+                </tr>
+
+            </table>
+
+            <table class="tablas">
+
+                <tr>
+                    <th id="th1">
+                        <div id="label1">
+                            <label >Descripción de la práctica:</label> 
+                            
+                                
+                        </div>
+
+                    </th>
+
+                    <th id="th2">
+                        <textarea class="txtarea"></textarea>
+
+                    </th>
+
+                </tr>
+
+
+            </table>
+
+            
+
+            
+
+        </form>
+
+    </fieldset>
+
+    <div >
+        <input type="submit" class="boton" value="Enviar Consulta" >
+    </div>
+
+
+
+</body>
+</html>
